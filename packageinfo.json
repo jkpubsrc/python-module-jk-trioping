@@ -1,0 +1,50 @@
+{
+	"language": "python3",
+	"name": "jk_trioping",
+	"version": "0.2019.8.23",
+	"meta": {
+		"description": "This python module provides an asynchroneous version of ping based on trio.",
+		"keywords": [
+			"trio",
+			"ping"
+		],
+		"license": "Apache 2.0",
+		"development_status": "alpha",
+		"authors": [
+			{
+				"name": "Jürgen Knauth",
+				"email": "pubsrc@binary-overflow.de"
+			}
+		],
+		"wiki": {
+			"page": "DevDocs:jk_trioping"
+		}
+	},
+	"repositories": [
+		{
+			"type": "github",
+			"user": "jkpubsrc",
+			"project": "........",
+			"devon_publish": false
+		},
+		{
+			"type": "pypy",
+			"devon_publish": false
+		}
+	],
+	"source": {
+		"packages": [
+			"jk_trioping"
+		],
+		"extra_data_files": [
+		]
+	},
+	"requirements": {
+		"python_packages": [
+			"trio"
+		],
+		"python_packages_dev": [
+		]
+	}
+}
+
