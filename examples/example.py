@@ -6,6 +6,9 @@ import trio
 import jk_trioping
 
 async def main():
+
+	# single ping with host not answering
+
 	print("Pinging:", "7.7.7.7", "1 time")
 	t = trio.current_time()
 	duration = await jk_trioping.ping("7.7.7.7")
@@ -14,6 +17,8 @@ async def main():
 	print("Total time:", 1000*dt, "ms")
 
 	print()
+
+	# single ping with host answering
 
 	print("Pinging:", "8.8.8.8", "1 time")
 	t = trio.current_time()
@@ -24,6 +29,8 @@ async def main():
 
 	print()
 
+	# multiple pings with host answering
+
 	print("Pinging:", "8.8.8.8", "5 times")
 	t = trio.current_time()
 	duration = await jk_trioping.ping("8.8.8.8", repeats=5)
@@ -33,6 +40,8 @@ async def main():
 	print("Avg time spent per ping:", 1000*dt/3, "ms")
 
 	print()
+
+	# single pings with hosts answering
 
 	print("Pinging:", ["8.8.8.8", "9.9.9.9", "google.com", "yahoo.com"], "1 time")
 	t = trio.current_time()
