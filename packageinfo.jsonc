@@ -1,7 +1,7 @@
 {
 	"language": "python3",
 	"name": "jk_trioping",
-	"version": "0.2019.8.23",
+	"version": "0.2020.4.1",
 	"meta": {
 		"description": "This python module provides an asynchroneous version of ping based on trio.",
 		"keywords": [
@@ -37,11 +37,17 @@
 			"jk_trioping"
 		],
 		"extra_data_files": [
+		],
+		"extra_binary_files": [
+			"bin/multiping.py"
 		]
 	},
 	"requirements": {
 		"python_packages": [
-			"trio"
+			"trio",
+			"jk_console",
+			"jk_argparsing",
+			"jk_json"
 		],
 		"python_packages_dev": [
 		]

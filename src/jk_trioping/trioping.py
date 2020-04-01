@@ -73,7 +73,10 @@ async def multiPing(hosts:typing.Union[typing.List,typing.Tuple], timeout:int=2,
 	assert isinstance(repeats, int)
 
 	if len(hosts) == 1:
-		return await ping(hosts[0], timeout, repeats)
+		ret = await ping(hosts[0], timeout, repeats)
+		return {
+			hosts[0]: ret
+		}
 
 	else:
 		if repeats > 1:

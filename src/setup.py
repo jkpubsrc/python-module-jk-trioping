@@ -12,22 +12,25 @@
 from setuptools import setup
 
 def readme():
-	with open("README.rst", "r", encoding="UTF-8-sig") as f:
+	with open("README.md", "r", encoding="UTF-8-sig") as f:
 		return f.read()
 
 setup(
 	author = "Jürgen Knauth",
 	author_email = "pubsrc@binary-overflow.de",
 	classifiers = [
-		"Programming Language :: Python :: 3",
 		"Development Status :: 3 - Alpha",
+		"Framework :: Trio",
 		"License :: OSI Approved :: Apache Software License",
 	],
 	description = "This python module provides an asynchroneous version of ping based on trio.",
-	download_url = "https://github.com/jkpubsrc/......../tarball/0.2019.8.23",
+	download_url = "https://github.com/jkpubsrc/......../tarball/0.2020.4.1",
 	include_package_data = False,
 	install_requires = [
 		"trio",
+		"jk_console",
+		"jk_argparsing",
+		"jk_json",
 	],
 	keywords = [
 		"trio",
@@ -38,8 +41,12 @@ setup(
 	packages = [
 		"jk_trioping",
 	],
+	scripts = [
+		"bin/multiping.py",
+	],
 	url = "https://github.com/jkpubsrc/........",
-	version = "0.2019.8.23",
+	version = "0.2020.4.1",
 	zip_safe = False,
 	long_description = readme(),
+	long_description_content_type="text/markdown",
 )
