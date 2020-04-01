@@ -24,7 +24,7 @@ setup(
 		"License :: OSI Approved :: Apache Software License",
 	],
 	description = "This python module provides an asynchroneous version of ping. It is based on the trio framework.",
-	download_url = "https://github.com/jkpubsrc/......../tarball/0.2020.4.1",
+	download_url = "https://github.com/jkpubsrc/python-module-jk-trioping/tarball/0.2020.4.1",
 	include_package_data = False,
 	install_requires = [
 		"trio",
@@ -44,7 +44,7 @@ setup(
 	scripts = [
 		"bin/multiping.py",
 	],
-	url = "https://github.com/jkpubsrc/........",
+	url = "https://github.com/jkpubsrc/python-module-jk-trioping",
 	version = "0.2020.4.1",
 	zip_safe = False,
 	long_description = readme(),
