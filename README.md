@@ -4,7 +4,7 @@ jk_trioping
 Introduction
 ------------
 
-This python module ...
+This python module provides an asynchroneous version of ping. It is based on the trio framework.
 
 Information about this module can be found here:
 
