@@ -8,7 +8,7 @@ This python module provides an asynchroneous version of ping. It is based on the
 
 Information about this module can be found here:
 
-* [github.org](https://github.com/jkpubsrc/....)
+* [github.com](https://github.com/jkpubsrc/python-module-jk-trioping)
 * [pypi.python.org](https://pypi.python.org/pypi/jk_trioping)
 
 Why this module?
